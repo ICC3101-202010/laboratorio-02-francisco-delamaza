@@ -11,7 +11,7 @@ namespace Laboratorio_2
         private bool x;
         private List<Cancion> Canciones = new List<Cancion>();
        
-        public Espotifai()
+        public  Espotifai()
         {
           
 
@@ -24,25 +24,25 @@ namespace Laboratorio_2
             if(x == false)
             {
                 Canciones.Add(cancion);
+                Console.WriteLine("Cancion agregada");
                 return true;
             }
             else
             {
+                Console.WriteLine("error");
                 return false;
             }
         }
 
         public void VerCanciones()
         {
-            
-           
-            foreach (var i in Canciones)
+            foreach (Cancion i in Canciones)
             {
                 Cancion n = i;
                 Console.WriteLine(n.Informacion());
             }
-            
-
         }
+           
+        
     }
 }
