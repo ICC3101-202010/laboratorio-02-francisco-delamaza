@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Laboratorio_2
 {
-    public class Cancion
+    class Cancion
     {
         private string Nombre;
         private string Álbum;
         private string Artista;
         private string Género;
-
+       
        
        
 
@@ -30,18 +30,8 @@ namespace Laboratorio_2
 
         public String Informacion()
         {
-            Console.Write("genero: ");
-            Console.Write(Género);
-            Console.Write(",");
-            Console.Write(" artista: ");
-            Console.Write(Artista);
-            Console.Write(",");
-            Console.Write(" album: ");
-            Console.Write(Álbum);
-            Console.Write(",");
-            Console.Write(" nombre: ");
-            Console.Write(Nombre);
-            return Nombre;
+            
+            return $" genero: {Género}, artista: {Artista}, album: {Álbum}, Nombre: {Nombre}";
             
             
         }

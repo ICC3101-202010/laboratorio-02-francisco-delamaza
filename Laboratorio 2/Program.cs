@@ -11,7 +11,11 @@ namespace Laboratorio_2
         static void Main(string[] args)
         {
             Cancion c = new Cancion("Lights", "Lights", "Ellie Glounding", "Pop");
-            c.Informacion();
+            Espotifai e = new Espotifai();
+            e.AgregarCancion(c);
+            e.VerCanciones();
+            Console.WriteLine(c.Informacion());
+            
 
 
             
