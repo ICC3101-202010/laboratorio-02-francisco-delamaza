@@ -10,6 +10,13 @@ namespace Laboratorio_2
     {
         static void Main(string[] args)
         {
+            Cancion c = new Cancion("Lights", "Lights", "Ellie Glounding", "Pop");
+            c.Informacion();
+
+
+            
+            Console.ReadKey();
+
         }
     }
 }
