@@ -20,7 +20,7 @@ namespace Laboratorio_2
 
         public bool AgregarCancion(Cancion cancion)
         {
-            
+            x = 0;
             foreach(var i in Canciones)
             {
                 if (i.Nombre.Equals(cancion.Nombre) && i.Artista.Equals(cancion.Artista) && i.Álbum.Equals(cancion.Álbum))
@@ -29,7 +29,7 @@ namespace Laboratorio_2
                 }
                 else
                 {
-                    x = 0;
+                    
                 }
             }
             if(x == 0)

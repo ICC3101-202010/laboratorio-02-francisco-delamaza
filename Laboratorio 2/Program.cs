@@ -16,6 +16,7 @@ namespace Laboratorio_2
             bool showMenu = true;
             while (showMenu)
             {
+                
                 Console.WriteLine("Bienvenido");
                 Console.WriteLine("Menu");
                 Console.WriteLine();
@@ -45,16 +46,18 @@ namespace Laboratorio_2
                     Cancion f = new Cancion(a, b, z, d);
                     e.AgregarCancion(f);
                     Console.WriteLine();
-                    Console.ReadLine();
+                    
                     
                 }
                  if (x == "3")
                 {
                     break;
                 }
-                 else
+               
+                 else if (x != "1" && x != "2" && x != "3" && x!= "\n")
                 {
                     Console.WriteLine("Opción no valida");
+                    Console.WriteLine();
                 }
                       
                     
