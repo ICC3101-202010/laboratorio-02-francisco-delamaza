@@ -11,29 +11,12 @@ namespace Laboratorio_2
         
         static void Main(string[] args)
         {
-            Cancion f = new Cancion("a", "b", "c", "d");
+            
             Espotifai e = new Espotifai();
             bool showMenu = true;
             while (showMenu)
             {
-                
-                showMenu = MainMenu();
-            }
-
-            
-               
-            Console.ReadKey();
-            
-            
-            //menu
-            
-        }
-        private static bool MainMenu()
-        {
-
-            Espotifai e = new Espotifai();
-
-            Console.WriteLine("Bienvenido");
+                Console.WriteLine("Bienvenido");
                 Console.WriteLine("Menu");
                 Console.WriteLine();
                 Console.WriteLine("Elija una opción:");
@@ -41,37 +24,53 @@ namespace Laboratorio_2
                 Console.WriteLine("1) Ver todas las canciones");
                 Console.WriteLine("2) Agregar una cancion");
                 Console.WriteLine("3) Salir");
+                string x = Console.ReadLine();
+                
 
-                switch (Console.ReadLine())
+                if (x == "1")
                 {
-                    case "1":
-                    
                     e.VerCanciones();
                     Console.WriteLine("Presione tecla para continuar");
                     Console.ReadKey();
-                    return true;
-
-                    case "2":
-                        Console.WriteLine("nombre: ");
-                        string a = Console.ReadLine();
-                        string b = Console.ReadLine();
-                        string z = Console.ReadLine();
-                        string d = Console.ReadLine();
-                        Cancion f = new Cancion(a, b, z, d);
-
-
-                        e.AgregarCancion(f);
-                        Console.WriteLine("Presione tecla para continuar");
-                        Console.ReadKey();
-
-                        return true;
-                    case "3":
-                    return false; ;
-                    default:
-                        return true;
-
+                }
+                if (x == "2")
+                { 
+                    
+                        
+                    Console.WriteLine("nombre: ");
+                    string a = Console.ReadLine();
+                    string b = Console.ReadLine();
+                    string z = Console.ReadLine();
+                    string d = Console.ReadLine();
+                    Cancion f = new Cancion(a, b, z, d);
+                    e.AgregarCancion(f);
+                    Console.WriteLine();
+                    Console.ReadLine();
                     
                 }
+                 if (x == "3")
+                {
+                    break;
+                }
+                 else
+                {
+                    Console.WriteLine("Opción no valida");
+                }
+                      
+                    
+
+
+                }
+
+            
+               
+           
+            
+            
+            //menu
+            
+        }
+        
 }
     }
-}
+

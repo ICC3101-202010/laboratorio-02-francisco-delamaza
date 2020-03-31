@@ -8,33 +8,54 @@ namespace Laboratorio_2
 {
     class Cancion
     {
-        private string Nombre;
-        private string Álbum;
-        private string Artista;
-        private string Género;
+        private string nombre;
+        private string álbum;
+        private string artista;
+        private string género;
        
        
        
 
 
 
-        public Cancion(string Nombre, string Álbum, string Artista, string Género)
+        public Cancion(string nombre, string álbum, string artista, string género)
         {
-            this.Nombre = Nombre;
-            this.Álbum = Álbum;
-            this.Género = Género;
-            this.Artista = Artista;
+            this.nombre = nombre;
+            this.álbum = álbum;
+            this.género = género;
+            this.artista = artista;
 
         }
 
+        public string Nombre
+        {
+            get { return nombre; }
+            set { nombre = value; }
+        }
+        public string Álbum
+        {
+            get { return álbum; }
+            set { álbum = value; }
+        }
+        public string Género
+        {
+            get { return género; }
+            set { género = value; }
+        }
+        public string Artista
+        {
+            get { return artista; }
+            set { artista = value; }
+        }
 
         public String Informacion()
         {
             
-            return $" genero: {Género}, artista: {Artista}, album: {Álbum}, Nombre: {Nombre}";
+            return $" genero: {género}, artista: {artista}, album: {álbum}, Nombre: {nombre}";
             
             
         }
         
     }
+
 }
